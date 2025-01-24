@@ -10,3 +10,5 @@ class Recipe(recipe.Recipe):
 
     files_libs = ['libnghttp2']
     files_devel = ['include/nghttp2', '%(libdir)s/pkgconfig/libnghttp2.pc']
+
+    configure_options = '-DENABLE_LIB_ONLY=ON'
