@@ -2,11 +2,11 @@
 
 class Recipe(recipe.Recipe):
     name = 'nghttp2'
-    version = '1.52.0'
+    version = '1.64.0'
     stype = SourceType.TARBALL
     btype = BuildType.CMAKE
     url = 'https://github.com/nghttp2/nghttp2/releases/download/v{0}/nghttp2-{0}.tar.xz'.format(version)
-    tarball_checksum = '3ea9f0439e60469ad4d39cb349938684ffb929dd7e8e06a7bffe9f9d21f8ba7d'
+    tarball_checksum = '88bb94c9e4fd1c499967f83dece36a78122af7d5fb40da2019c56b9ccc6eb9dd'
 
     files_libs = ['libnghttp2']
     files_devel = ['include/nghttp2', '%(libdir)s/pkgconfig/libnghttp2.pc']
